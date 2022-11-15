@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,700&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Сайт группы</title>
+    <script defer src="../scripts/loginpopup.js"></script>
+  </head>
+  <body class="root">
+    <header class="header">
+      <img class="site-logo" src="../images/Логотип.png" alt="Логотип" />
+      <ul class="site-menu">
+        <li>
+          <a class="menu-link" href="../index.html">Главная</a>
+        </li>
+        <li>
+          <a class="menu-link" href="student.html">Студенты</a>
+        </li>
+        <li>
+          <a class="menu-link" href="about.html">О курсе</a>
+        </li>
+        <li>
+          <a class="menu-link active-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <a class="login-button" href="login.html">Войти</a>
+      <div class="login-popup show-popup">
+        <h2>Войти на сайт</h2>
+        <form class="login-form" action="#" method="get">
+          <input
+            class="login-input"
+            name="login"
+            type="email"
+            placeholder="Логин"
+            required=""
+          />
+          <input
+            class="password-input"
+            name="password"
+            type="password"
+            placeholder="Пароль"
+            required=""
+          />
+          <button class="login-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+    <main class="main main-contacts">
+        <h1 class="main-heading contacts-heading">Как нас найти 🗺️️</h1>
+        <div class="contacts-naps" style="position:relative;overflow:hidden;">
+          <a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" 
+          style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a>
+          <a href="https://yandex.ru/maps/?ll=36.308331%2C55.642490&utm_medium=mapframe&utm_source=maps&z=16" 
+          style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
+          <iframe class="contacts-naps"  src="https://yandex.ru/map-widget/v1/-/CCUbyWt~2D" width="560" height="400" allowfullscreen="allowfullscreen" 
+          style="position:relative;">
+          </iframe>
+        </div>
+        <h2 class="contacts-text-heading">Наши контакты</h2>
+        <address class="contacts-address">
+          <p>Адрес: Московская область, Рузский городской округ, деревня Старая Руза</p>
+          <a  class="contacts-tel" href="tel:+7(495)555-55-55">Тел: +7 (495) 555-55-55</a>
+        </address>
+    </main>
+    <footer class="footer">
+      <p class="copywrite">
+        2022 &copy;
+        <a class="innopolis-link" href="https://innopolis.com">Иннополис</a>
+      </p>
+    </footer>
+  </body>
+</html>

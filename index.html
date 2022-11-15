@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Сайт группы</title>
+    <script defer src="./scripts/loginpopup.js"></script>
+  </head>
+  <body class="root">
+    <header class="header">
+      <img class="site-logo" src="./images/Логотип.png" alt="Логотип" />
+      <ul class="site-menu">
+        <li>
+          <a class="menu-link active-link" href="#">Главная</a>
+        </li>
+        <li>
+          <a class="menu-link" href="./pages/student.html">Студенты</a>
+        </li>
+        <li>
+          <a class="menu-link" href="./pages/about.html">О курсе</a>
+        </li>
+        <li>
+          <a class="menu-link" href="./pages/contact.html">Контакты</a>
+        </li>
+      </ul>
+      <a class="login-button" href="login.html">Войти</a>
+      <div class="login-popup show-popup">
+        <h2>Войти на сайт</h2>
+        <form class="login-form" action="#" method="get">
+          <input
+            class="login-input"
+            name="login"
+            type="email"
+            placeholder="Логин"
+            required=""
+          />
+          <input
+            class="password-input"
+            name="password"
+            type="password"
+            placeholder="Пароль"
+            required=""
+          />
+          <button class="login-button" type="submit">Войти</button>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="main-heading">
+        Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!
+      </h1>
+      <img
+        class="class-photo"
+        src="./images/class.jpg"
+        alt="Фото компьютерного класса"
+      />
+      <div class="box">
+        <div>
+          <h2>Для кого этот курс</h2>
+          <p class="intro-text">
+            Этот курс рассчитан на новичков, которые только начинают знакомство
+            с веб-разработкой. В начале курса вы узнаете о том, как устроен
+            Интернет и веб-сайты.&#160; Для обучения необходимо только владеть
+            компьютерной грамотностью (пользоваться браузером, создавать папки и
+            файлы, устанавливать программы).
+          </p>
+          <h3>Чему вы научитесь</h3>
+          <p class="intro-text">
+            На этом курсе вы узнаете, как устроены веб-сайты и как создавать их
+            с нуля. Изучите основы языков
+            <span class="nine-text-span"> HTML</span>,
+            <span class="nine-text-span"> CSS</span> и немного
+            <span class="nine-text-span"> JavaScript</span>. Мы вместе сверстаем
+            сайт нашей группы по этому макету. А затем вы
+            <span class="em-text">сами</span> сверстаете свои личные странички в
+            качестве домашнего задания и мы выложим все это на сервер.
+          </p>
+        </div>
+        <div class="div1">
+          <h4>&#8220;</h4>
+          <aside class="element">Учимся &#160; вместе!</aside>
+          <h5>&#8222;</h5>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="copywrite">
+        2022 &copy;
+        <a class="innopolis-link" href="https://innopolis.com">Иннополис</a>
+      </p>
+    </footer>
+  </body>
+</html>
