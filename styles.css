@@ -194,6 +194,7 @@ h4 {
   height: 80px;
   font-size: 64px;
   margin: 0;
+  color: #646464;
 }
 
 h5 {
@@ -201,6 +202,7 @@ h5 {
   height: 80px;
   font-size: 64px;
   margin: 0;
+   color: #646464;
 }
 
 .element {
@@ -399,6 +401,21 @@ h5 {
 
 .info__skills::after {
   content: '\260E';
+}
+
+[data-tooltip]:hover::after {
+  content: attr(data-tooltip); 
+  opacity: 1;
+  transition: 5s;
+  pointer-events: none; 
+  position: relative;
+  left: -50%; top: 50%;
+  z-index: 1; 
+  background: #ca5021; 
+  font-family: Lobster; 
+  font-size:20px; 
+  padding: 5px 10px; 
+  border: 1px solid #333;
 }
 
 /* Footer */
